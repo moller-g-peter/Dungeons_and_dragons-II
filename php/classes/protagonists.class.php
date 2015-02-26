@@ -2,7 +2,7 @@
 
 class Protagonists extends character {
 
-	protected $members = array();
+	public $members = array();
 
 	public function __construct($name, $human_player, $computer_player1, $computer_player2) {
 		

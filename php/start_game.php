@@ -10,8 +10,9 @@ $data_base = new DBObjectSaver(array(
   "prefix" => "Save_data"
 ));
 
-unset($data_base->protagonists);
-unset($data_base->antagonists);
+// unset($data_base->protagonists);
+// unset($data_base->antagonists);
+
 // unset($data_base->weapons);
 // unset($data_base->armors);
 // unset($data_base->tools);
@@ -19,8 +20,9 @@ unset($data_base->antagonists);
 // $object_tools = &$data_base->tools;
 // $object_weapons = &$data_base->weapons;
 // $object_armors = &$data_base->armors;
-$object_protagonists = &$data_base->protagonists;
-$object_antagonists = &$data_base->antagonists;
+
+// $object_protagonists = &$data_base->protagonists;
+// $object_antagonists = &$data_base->antagonists;
 
 
   // $object_weapons[] = New weapon("Elf Sword", array("Weapon Strength" => 10));
@@ -42,8 +44,12 @@ $object_antagonists = &$data_base->antagonists;
 
 
   $object_king_arthur = New Knight("King Arthur");
-  // $object_legolas = New Archer("Legolas");
-  // $object_merlin = New Sorcerer("Merlin");
+  $object_legolas = New Archer("Legolas");
+  $object_merlin = New Sorcerer("Merlin");
+
+
+  // $object_vampire = New Vampire("Vlad Tepes");  // ta bort senare om behövs...bara en temporär lösning
+
 
   // $object_king_arthur->weapons = $object_weapons[0];
   // $object_legolas->weapons = $object_weapons[1];
@@ -53,14 +59,16 @@ $object_antagonists = &$data_base->antagonists;
   // $object_legolas->armors = $object_armors[1];
   // $object_merlin->armors = $object_armors[2];
 
-  $object_protagonists[] = New Protagonists(
-    "Protagonists",
-    $object_king_arthur
+  // $object_protagonists[] = New Protagonists(
+  //   "Protagonists",
+  //   $object_king_arthur
+
+
     // $object_legolas,
     // $object_merlin
-  );
+  // );
 
-  $object_antagonists[] = New Antagonist("Necro Mancer", array("Health" => 1000,"Strength" => 10));
+  // $object_antagonists[] = New Antagonist("Necro Mancer", array("Health" => 1000,"Strength" => 10));
   // $object_antagonists[] = New Antagonist("South Dragon", array("Health" => 1500,"Strength" => 10));
   // $object_antagonists[] = New Antagonist("North Dragon", array("Health" => 2000,"Strength" => 10));
   // $object_antagonists[] = New Antagonist("Dark Knight", array("Health" => 2500,"Strength" => 10));
