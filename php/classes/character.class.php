@@ -1,7 +1,6 @@
 <?php
 
-class character extends Base
-{
+class character extends Base {
 	
 	public $name;
 	public $level = 50;
